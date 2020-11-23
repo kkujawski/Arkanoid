@@ -1,3 +1,4 @@
-Aby uruchomić skompilowaną aplikację w terminalu otworzonym w lokalizacji pliku Araknoid.jar należy wpisać komendę:
+# Arkanoid
+Aby uruchomić należy wpisać w konsoli znajdującej się w głównym folderze
 
-java -jar Arkanoid.jar
+./gradlew :run
