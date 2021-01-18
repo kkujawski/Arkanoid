@@ -367,7 +367,7 @@ public class Game extends JPanel implements KeyListener, ActionListener {
                 g.drawString("Blue - more balls.", 200, 260);
                 g.drawString("Red - change paddle size.", 200, 270);
                 g.drawString("Orange - slower balls.", 200, 280);
-                g.drawString("Greem - faster balls.", 200, 290);
+                g.drawString("Green - faster balls.", 200, 290);
 
             }
 
