@@ -347,15 +347,7 @@ public class Game extends JPanel implements KeyListener, ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if (active && e.getSource() == timer) {
-            for(int i = 0 ; i < 10; i++) {
-                System.out.println(ballArray[i][0]);
-                System.out.println(ballArray[i][1]);
-                System.out.println(ballArray[i][2]);
-                System.out.println(ballArray[i][3]);
-                System.out.println(ballArray[i][4]);
-                System.out.println(" ");
-            }
-            System.out.println("Koniec ");
+
             //Checking if ball is hitting the paddle
             ballHitPaddle();
             ballHitBlock();
