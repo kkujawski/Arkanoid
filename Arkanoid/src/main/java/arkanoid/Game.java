@@ -181,6 +181,8 @@ public class Game extends JPanel implements KeyListener, ActionListener {
         for(int ball = 0; ball < 10; ball++){
             ballArray[ball][2] /= 2;
             ballArray[ball][3] /= 2;
+            if (ballArray[ball][3] == 0)
+                ballArray[ball][3] = 1;
         }
     }
 
@@ -298,6 +300,10 @@ public class Game extends JPanel implements KeyListener, ActionListener {
             g.drawString("Lives: "+lives, 10, 10);
             if(!active){
                 g.drawString("To play press space.", 200, 250);
+                g.drawString("Blue - more balls.", 200, 260);
+                g.drawString("Red - change paddle size.", 200, 270);
+                g.drawString("Orange - slower balls.", 200, 280);
+                g.drawString("Greem - faster balls.", 200, 290);
 
             }
         }
@@ -416,6 +422,7 @@ public class Game extends JPanel implements KeyListener, ActionListener {
 
             resetGame();
             active = false;
+            repaint();
         }
     }
 
