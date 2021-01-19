@@ -9,9 +9,9 @@ public class Arkanoid {
         BallModel ball = new BallModel();
         BlockModel block = new BlockModel();
         PaddleModel paddle = new PaddleModel();
-        View screen = new View();
+        View screen = new View(ball, paddle, block);
         Controller controller = new Controller(ball, block, paddle, screen);
-
+        screen.addKeyListener(controller);
 
     }
 }
