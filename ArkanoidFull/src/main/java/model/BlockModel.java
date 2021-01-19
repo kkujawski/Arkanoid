@@ -2,11 +2,9 @@ package model;
 
 import controller.Controller;
 
-import java.util.Random;
-
 public class BlockModel {
-    public static int width = 50, height = 20;
-    public static int numberOfBlocks;
+    public int width = 50;
+    public int numberOfBlocks;
 
     public int blocksLeft = Controller.randomNumber.nextInt(15 + 1) + 10;
 

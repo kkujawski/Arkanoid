@@ -5,7 +5,6 @@ import model.PaddleModel;
 import java.awt.*;
 
 public class BallModel {
-    public static int radius = 20;
     public static int [][] ballArray= new int[10][5]; // [ballX, ballY, speedX, speedY, active]
     int ballsLeft = 1;
 
